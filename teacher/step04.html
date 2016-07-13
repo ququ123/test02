@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="layer/skin/layer.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>-->
+</head>
+<body>
+	<div class="work-nav">
+		<ul>
+			<li>选择目录--></li>
+			<li>选择习题--></li>
+			<li>发布时间--></li> 
+			<li  class="active">完成时间</li>
+		</ul>
+			<p class="p-tit">设置作业完成时间</p>
+			<div id='pickDateBtn' class="sele-time">选择日期</div>
+			<div id="info"></div>
+			<p class="p-tit">是否下发账号密码</p>
+			<div class="students">
+				<label class="active"><input type="radio" name="students" id="" value="" checked="checked"/>不下发</label>
+				<label><input type="radio" name="students" id="" value="" />下发</label>
+			</div>
+    </div>
+	<a  class="next-commbtn next-btn4">生成短信</a>
+	
+	<!--弹窗-->
+	<div class="dalog">
+		可传入任何内容，支持html。一般用于手机页面中可传入任何内容，支持html。一般用于手机页面中可传入任何内容，支持html。
+		一般用于手机页面中可传入任何内容，支持html。一般用于手机页面中可传入任何内容，支持html。一般用于手机页面中
+		<!--<p><a>发送作业</a></p>-->
+	</div>
+	
+</body>
+<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="layer/layer.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+			 //mui初始化
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+			var info = document.getElementById("info");
+			
+			document.getElementById("pickDateBtn").addEventListener('tap', function() {
+				var dDate = new Date();
+				dDate.setFullYear(2016, 7, 16);
+				var minDate = new Date();
+				minDate.setFullYear(2010, 0, 1);
+				var maxDate = new Date();
+				maxDate.setFullYear(2056, 11, 31);
+				plus.nativeUI.pickDate(function(e) {
+					var d = e.date;
+					info.innerText = '您选择的日期是:' + d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
+				}, function(e) {
+					info.innerText = "您没有选择日期";
+				}, {
+					title: "请选择日期",
+					date: dDate,
+					minDate: minDate,
+					maxDate: maxDate
+				});
+			})
+		</script>
+</html>

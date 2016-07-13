@@ -1,0 +1,62 @@
+{
+	"index.html": {
+		"resources": [
+			"js/jquery-1.11.3.min.js",
+			"layer/skin/layer.css",
+			"layer/layer.js",
+			"step02.html",
+			"js/index.js",
+			"css/index.css",
+			"js/mui.min.js",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"step02.html"
+		]
+	},
+	"step02.html": {
+		"resources": [
+			"layer/skin/layer.css",
+			"js/jquery-1.11.3.min.js",
+			"layer/layer.js",
+			"js/index.js",
+			"step03.html"
+		],
+		"refer": [
+			"step03.html"
+		]
+	},
+	"step03.html": {
+		"resources": [
+			"step04.html",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"step02.html",
+			"css/index.css",
+			"layer/skin/layer.css",
+			"js/jquery-1.11.3.min.js",
+			"layer/layer.js",
+			"js/index.js"
+		],
+		"refer": [
+			"step04.html",
+			"step02.html"
+		]
+	},
+	"step04.html": {
+		"resources": [
+			"layer/skin/default/icon.png",
+			"css/index.css",
+			"layer/skin/layer.css",
+			"js/jquery-1.11.3.min.js",
+			"layer/layer.js",
+			"js/index.js",
+			"css/mui.min.css",
+			"js/mui.min.js",
+			"step03.html"
+		],
+		"refer": [
+			"step03.html"
+		]
+	}
+}

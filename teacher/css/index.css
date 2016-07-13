@@ -1,0 +1,38 @@
+*{padding: 0;margin: 0;font-family: "微软雅黑";font-size: 0.8rem;}
+a{text-decoration: none;}
+ul,li{list-style: none;}
+i,em{font-style: normal;}
+.dis{display: none;}
+.work-nav{position: fixed;top: 0rem;left: 0rem;background: #fff;width: 100%;}
+.work-nav ul{height: 1.5rem;border-bottom: 1px solid #ccc;}
+.work-nav ul li{list-style: none;width: 25%;float: left;font-size: 0.6rem;height: 1.5rem;line-height: 1.5rem;text-align: center;}
+.work-nav ul li.active{color: blue;border-bottom: 1px solid blue;}
+.work-step1{line-height: 1.2rem;text-indent: 0.5rem;}
+.work-step1 ul:nth-child(1){margin-top: 2.7rem;}
+.p-tit{text-indent: 0.2rem;color: blue;font-size: 0.6rem;line-height: 1.2rem;border-bottom: 1px solid #ccc;}
+.work-step1 ul li{line-height: 1.2rem;border-bottom: 1px solid #ccc;font-size: 0.6rem;color: #666;}
+.level{text-indent: 1.2rem;}
+.root{text-indent: 0.5rem;}
+.ckbg{background: pink;}
+
+.next-commbtn{display: block;height: 1.6rem;width:100%;line-height: 1.6rem;text-align: center;background: blue;font-size: 1rem;color: #fff;position: fixed;bottom: 0;left: 0;}
+.next-commbtn span{font-size: 0.6rem;background: pink;position: absolute;left: 20px;}
+
+/*step02*/
+.ti-adres{font-size: 0.6rem;line-height: 1.5rem;text-align: center;border-bottom: 1px solid #ccc;}
+.ti-adres select{font-size: 0.6rem;border: 1px solid #ccc;background: #fff;}
+.work-step2 .comm-div:nth-child(1){margin-top: 4.2rem;}
+.comm-div{height: 3rem;width: 100%;background: #ccc;margin-top: 5px;}
+.ckbg-homework{background: pink;}
+/*step03*/
+ .ti-adres label{font-size: 0.6rem;background: #ccc;padding:5px 20px;}   	
+ .ti-adres label.active{background: blue;color: #fff;}   
+ .sele-time{height: 3rem;background: #000;padding: 10px 25px;color: #fff;text-align: center;line-height: 3rem;}	
+ .sele-banji{height: 3rem;padding: 1rem 2rem;background: #666;}
+ .banji{padding: 5px;background: #ccc;}
+ .ck-bj{background: pink;color: #fff;}
+ .students{font-size: 0.6rem;line-height: 1.5rem;text-align: center;border-bottom: 1px solid #ccc;}
+ .students label{font-size: 0.6rem;background: #ccc;padding:5px 20px;}   	
+ .students label.active{background: blue;color: #fff;}  
+.dalog{padding:10px 20px;font-size: 0.7rem;}
+.dalog a{width: 90%;height:1.5rem;font-size: 0.7rem;background: #ccc;color: #fff;display: block;line-height: 1.5rem;margin: 10px auto;border-radius: 8px;text-align: center;}

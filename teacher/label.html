@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="layer/skin/layer.css"/>
+</head>
+<style type="text/css">
+	label{background: #ccc;margin-top: 10px;height: 55px;width: 522px;display: block;}
+	.active{background: red;}
+</style>
+<body>
+      <label>sddsfffffffffffffff<input type="radio" name="s"  value="" checked="checked"/></label>	<br />
+      <label>sddsfffffffffffffff<input type="radio" name="s" value="" />	</label>
+</body>
+<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="layer/layer.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	   $(" label").click(function(){
+	    	$(this).addClass("active").siblings().removeClass("active");
+	    });
+</script>
+</html>
